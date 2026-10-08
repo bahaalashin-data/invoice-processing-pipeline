@@ -42,6 +42,15 @@ three different suppliers emailed invoices the same day), **every one of
 them is processed in that same run** — each gets its own pipeline run,
 its own report, and its own reply.
 
+## Screenshots
+
+### Pipeline Monitoring
+![Pipeline Monitoring](docs/screenshots/pipeline_monitoring.png)
+
+### Business Analytics
+![Business Analytics](docs/screenshots/business_analytics.png)
+
+
 ## Architecture / Modules
 
 | Module                | Responsibility                                                              |
