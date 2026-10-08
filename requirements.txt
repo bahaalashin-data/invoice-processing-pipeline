@@ -1,0 +1,19 @@
+# --- Email handling (IMAP read / SMTP reply) ---
+# imaplib, email, smtplib -> Python standard library, no install needed
+
+# --- PDF parsing ---
+pdfplumber==0.11.4
+
+# --- Excel report generation ---
+openpyxl==3.1.5
+
+# --- Config management ---
+python-dotenv==1.0.1
+
+# --- Dashboard ---
+streamlit==1.37.0
+plotly==5.22.0
+streamlit-autorefresh==1.0.1
+
+# --- Sample data generation (tools/generate_sample_invoices.py) ---
+reportlab==4.2.5

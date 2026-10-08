@@ -1,0 +1,23 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime data (don't commit real invoices / generated reports / logs)
+attachments/*
+!attachments/.gitkeep
+extracted_pdfs/*
+!extracted_pdfs/.gitkeep
+reports/*
+!reports/.gitkeep
+logs/*
+!logs/.gitkeep
+database/*.db
+
+# OS / editor
+.DS_Store
+.vscode/
