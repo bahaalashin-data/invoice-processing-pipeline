@@ -141,7 +141,7 @@ invoice-processing-pipeline/
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/bahaalashin-data/invoice-processing-pipeline.git
 cd invoice-processing-pipeline
 python -m venv venv
 venv\Scripts\activate        # Windows
