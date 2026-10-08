@@ -103,7 +103,7 @@ def render_monitoring() -> None:
             st.dataframe(
                 table_rows,
                 hide_index=True,
-                width=7500,
+                width=750,
                 height=270,
             )
 
@@ -124,6 +124,14 @@ def render_monitoring() -> None:
                 hide_index=True,
                 width=750,
                 height=220,
+                column_order=("processed_at", "sender", "subject", "status", "reason"),
+                column_config={
+                    "processed_at": st.column_config.TextColumn("Processed At", width="medium"),
+                    "sender": st.column_config.TextColumn("Sender", width="medium"),
+                    "subject": st.column_config.TextColumn("Subject", width="medium"),
+                    "status": st.column_config.TextColumn("Status", width="small"),
+                    "reason": st.column_config.TextColumn("Reason", width="small"),
+                },
             )
 
     # -----------------------------------------
