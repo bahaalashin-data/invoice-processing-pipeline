@@ -109,13 +109,15 @@ def _process_one_batch(
         should_send = (source == "email") or send_email
         if should_send:
             recipient = to_override or resolve_recipient(original_sender)
-            body = build_completion_email_body(
+
+            body, html_body = build_completion_email_body(
                 invoices_processed=len(valid),
                 records_loaded=inserted,
                 report_filename=report_path.name,
                 rejected_count=len(rejected),
+                recipient=recipient,
             )
-            send_reply_email(recipient, report_path, body=body)
+            send_reply_email(recipient, report_path, body=body, html_body=html_body)
             log_activity(run_id, "Reply Sent", "SUCCESS", f"to {recipient}")
         else:
             log_activity(run_id, "Reply Skipped", "SUCCESS", "Local/Test mode (use --send-email to enable)")
