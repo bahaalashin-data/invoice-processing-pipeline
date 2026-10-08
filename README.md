@@ -50,6 +50,8 @@ its own report, and its own reply.
 ### Business Analytics
 ![Business Analytics](docs/screenshots/business_analytics.png)
 
+### Reply Email
+![Business Analytics](docs/screenshots/reply_email.png)
 
 ## Architecture / Modules
 
